@@ -1,0 +1,165 @@
+@import url("https://fonts.google.com/specimen/Questrial?category=Sans+Serif,Monospace");
+@import url("https://fonts.google.com/specimen/Montserrat?query=montserrat&category=Sans+Serif,Monospace");
+@import url("https://fonts.google.com/specimen/Golos+Text?category=Sans+Serif,Monospace");
+
+.navegación {
+  border: 2px solid #c2daba;
+  background-color: #c2daba;
+}
+
+header {
+  position: absolute;
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+}
+nav {
+  display: flex;
+}
+ul {
+  display: flex;
+}
+li {
+  list-style: none;
+  margin: 10px;
+}
+
+a {
+  text-decoration: none;
+  font-family: Arial, Helvetica, sans-serif;
+  color: black;
+}
+.inicio {
+  font-weight: bold;
+}
+.navegación2 {
+  position: absolute;
+  display: flex;
+  right: 0px;
+  border: #c2daba;
+}
+body {
+  margin-top: 74px;
+  height: 1500px;
+}
+main {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+footer {
+  position: absolute;
+  width: 100%;
+  height: 40px;
+  left: 0px;
+  border: 2px solid #c2daba;
+  background-color: #c2daba;
+  display: flex;
+  justify-content: center;
+}
+
+#logo_introducción {
+  width: 100%;
+  height: 300px;
+  left: 0px;
+  background-color: #4ebb9c;
+  align-content: center;
+}
+.imagen_logo {
+  display: flex;
+  justify-content: center;
+  color: #ffffff;
+}
+
+#quienes_somos {
+  display: flex;
+  justify-content: center;
+}
+.hojas1,
+.hojas2 {
+  height: 300px;
+  width: 300px;
+  background-color: rgb(255, 255, 255);
+}
+.hojas1 {
+  background-image: url(../img/hojas.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  left: 0px;
+}
+.hojas2 {
+  background-image: url(../img/hojas_izquierda.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  right: 0px;
+}
+.quienes_somos {
+  height: 300px;
+  background-color: #ffffff;
+  font-family: Questrial;
+  font-size: 24px;
+}
+.p1 {
+  font-weight: bold;
+  display: flex;
+  justify-content: center;
+}
+
+.p2,
+.p3 {
+  display: flex;
+  text-align: center;
+}
+
+#agendas,
+#cuadernillos,
+#cuadernillos_inteligentes {
+  display: flex;
+  background-color: #4ebb9c;
+  width: 100%;
+  height: 300px;
+}
+
+.img_agenda {
+  width: 300px;
+  background-image: url(../img/agendas.jpeg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.info_agendas {
+  background-color: #4ebb9c;
+  width: 50%;
+}
+
+#cuadernillos {
+  display: flex;
+  flex-direction: row-reverse;
+}
+.img_cuadernillo {
+  width: 300px;
+  background-image: url(../img/agendas.jpeg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.info_cuadernillo {
+  background-color: #4ebb9c;
+  width: 50%;
+}
+
+.img_inteligente {
+  width: 300px;
+  background-image: url(../img/agendas.jpeg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.info_inteligente {
+  background-color: #4ebb9c;
+  width: 50%;
+}
