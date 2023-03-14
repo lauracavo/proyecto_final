@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <!-- links fuentes -->
+    <link
+      rel="stylesheet"
+      href="https://fonts.google.com/specimen/Questrial?category=Sans+Serif,Monospace"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.google.com/specimen/Montserrat?query=montserrat&category=Sans+Serif,Monospace"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.google.com/specimen/Golos+Text?category=Sans+Serif,Monospace"
+    />
+
+    <!-- link a css -->
+    <link rel="stylesheet" href="../css/style.css" />
+  </head>
+  <body>
+    <header>
+      <nav>
+        <div class="logo_inicio">
+          <a href="../index.html"
+            ><img
+              src="../img/logo_negro.png"
+              alt="logo linz"
+              class="logo_inicio"
+          /></a>
+        </div>
+        <div>
+          <ul>
+            <li><a href="./productos.html">PRODUCTOS</a></li>
+            <li><a href="./sobre_nosotros.html">SOBRE NOSOTROS</a></li>
+            <li><a href="./pedidos.html">PEDIDOS</a></li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+    <main id="main_pedidos">
+      <section id="logo_introducción">
+        <div class="imagen_logo">
+          <img src="../img/logo_blanco.png" alt="Logo Linz" height="200px" />
+        </div>
+        <div class="descripción">AGENDAS/PAPELERÍA</div>
+      </section>
+      <section id="formuario">
+        <div class="form">
+          <form action="">
+            <div>
+              <label for="nombre_apellido"> Nombre y apellido</label>
+
+              <input
+                type="text"
+                class="nombre_apellido"
+                id="nombre_apellido"
+                name="nombre_apellido"
+              />
+            </div>
+            <div>
+              Indique producto:
+              <select name="producto" class="select">
+                <option value="">Seleccione producto</option>
+                <option value="">Cuadernillo A4</option>
+                <option value="">Cuadernillo A5</option>
+                <option value="">Cuaderno Inteligente A4</option>
+                <option value="">Cuaderno Inteligente A5</option>
+                <option value="">Agenda Docente A4 Vertical</option>
+                <option value="">Agenda A5 Vertical</option>
+                <option value="">Agenda Docente A4 Horizontal</option>
+                <option value="">Agenda Emprendedora A4</option>
+                <option value="">Agenda Emprendedora A5</option>
+                <option value="">Agenda Anual Diaria</option>
+                <option value="">Agenda Anual Semanal</option>
+                <option value="">Stickers</option>
+              </select>
+            </div>
+            <label for="mensaje">Mensaje:</label>
+            <textarea
+              name="mensaje"
+              id="mensaje"
+              cols="30"
+              rows="10"
+              placeholder="Escribe un mensaje"
+            ></textarea>
+            <div class="envio">
+              ENVÍO:
+              <div class="radio_buttom">
+                <label for="si">SI</label>
+                <input type="radio" name="envio" class="si_no" id="si" />
+              </div>
+              <div class="radio_buttom">
+                <label for="no">NO</label>
+                <input type="radio" name="envio" class="si_no" id="no" />
+              </div>
+            </div>
+            Dirección:
+            <textarea name="" id="" cols="30" rows=""></textarea>
+            <div class="botones">
+              <button
+                id="enviar"
+                name="enviar"
+                type="submit"
+                class="btn enviar"
+              >
+                ENVIAR
+              </button>
+              <button id="enviar" name="enviar" type="reset" class="btn reset">
+                RESETEAR
+              </button>
+            </div>
+          </form>
+        </div>
+      </section>
+    </main>
+    <footer id="footer">
+      <p class="footer_page">&copy; 2023 , Linz Design</p>
+    </footer>
+  </body>
+</html>
