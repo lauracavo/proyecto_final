@@ -7,78 +7,65 @@
 
 /* =================================== HEADER ============================ */
 
+/* div {
+  border: 2px solid red;
+} */
 header {
-  display: flex;
   position: fixed;
-  top: 0px;
-  left: 0px;
   width: 100%;
+  top: 0;
 }
-
 nav {
   display: flex;
-  background-color: #c2daba;
-  height: 70px;
-  width: 100%;
   justify-content: space-between;
+  align-items: center;
+  background-color: #c2daba;
 }
 .logo_inicio {
   width: 70px;
   height: 70px;
-  cursor: pointer;
 }
-
+.navegacion {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 ul {
   display: flex;
+  margin: 0;
+  padding: 0;
 }
 li {
   list-style: none;
 }
-li a:hover {
-  background-color: #4ebb9c;
-  color: #ffffff;
-  transition: all 300ms;
-}
 li a {
-  display: block;
   text-decoration: none;
   color: black;
-  padding: 25px;
+  padding: 27px;
 }
-/* ========================== INICIO ===========================================================*/
-
-#main_inicio {
-  display: flex;
-  flex-wrap: wrap;
-}
-#main_inicio,
-#main_productos,
-#main_pedidos,
-#main_sobre_nosotros {
-  margin-top: 70px;
-}
-
-#logo_introducción {
-  width: 100%;
-  height: 240px;
+li a:hover {
+  color: #ffffff;
   background-color: #4ebb9c;
 }
-.imagen_logo {
-  display: flex;
-  justify-content: center;
+.logo_inicio:hover {
+  background-color: #4ebb9c;
+}
+#logo_introducción {
+  background-color: #4ebb9c;
+  height: 250px;
 }
 .descripción {
-  height: 40px;
   display: flex;
-  font-size: 20px;
-  color: #ffffff;
   justify-content: center;
+  color: #ffffff;
 }
-
+/* ========================== INICIO ===========================================================*/
+main {
+  margin-top: 70px;
+}
 #quienes_somos {
   display: flex;
 }
-
 .hojas1,
 .hojas2 {
   height: 300px;
@@ -114,7 +101,6 @@ li a {
 .p3 {
   font-size: 18px;
 }
-
 #agendas,
 #cuadernillos,
 #cuadernillos_inteligentes {
@@ -135,11 +121,11 @@ li a {
   background-repeat: no-repeat;
 }
 
-.info_agendas,
-.info_cuadernillo,
-.info_inteligente {
+.info_inicio_productos {
+  padding: 90px;
   background-color: #6be2c1;
   width: 100%;
+  font-size: large;
 }
 .info_cuadernillo {
   background-color: #8be9ce;
@@ -149,15 +135,14 @@ li a {
 }
 
 .img_cuadernillo {
-  background-image: url(../img/agendas.jpeg);
+  background-image: url(../img/producto_cuadernillo.jpeg);
 }
 
 .img_inteligente {
-  background-image: url(../img/agendas.jpeg);
+  background-image: url(../img/producto_cuaderno_inteligente.jpeg);
 }
 
 /* =================================== PRODUCTOS ======================================== */
-
 .productos {
   margin-top: 30px;
   margin-bottom: 30px;
@@ -191,7 +176,6 @@ li a {
 }
 
 /* =================== PEDIDOS =================*/
-
 #formulario {
   width: 100%;
   display: flex;
@@ -277,6 +261,39 @@ label {
   width: 20%;
   display: flex;
   justify-content: space-between;
+}
+/* =================== SOBRE NOSOTOROS =================*/
+.foto_dueñas {
+  height: 200px;
+  border-radius: 50%;
+  margin: 45px;
+}
+.info_dueñas {
+  /*  border: 2px solid red; */
+  display: flex;
+  background-color: #bafae8;
+  align-items: center;
+  justify-content: center;
+}
+.descripcion_dueñas {
+  /*  border: 2px solid red; */
+  width: 50%;
+  font-size: 18px;
+  line-height: 2rem;
+}
+.laura {
+  flex-direction: row-reverse;
+}
+.parrafo_laura {
+  /*  padding: 80px 0px 80px 80px; */
+  text-align: right;
+}
+/* .parrafo_lordes {
+  padding: 80px 80px 80px 0px;
+} */
+.hermanas {
+  width: 70%;
+  margin-bottom: 50px;
 }
 /* =================================== FOOTER ============================================ */
 footer {
