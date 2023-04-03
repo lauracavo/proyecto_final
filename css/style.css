@@ -14,7 +14,7 @@ header {
   position: fixed;
   width: 100%;
   top: 0;
-  z-index: 10%;
+  z-index: 200;
 }
 nav {
   display: flex;
@@ -210,21 +210,23 @@ main {
   visibility: visible;
 }
 
-.full_img {
+.div_oculto {
   width: 100%;
-  background-color: rgb(0, 0, 0, 0.1);
+  height: 100%;
+  background-color: rgb(0, 0, 0, 0.8);
   position: fixed;
   top: 0;
   left: 0;
   display: flex;
   align-items: center;
   justify-content: center;
+  z-index: 300;
 }
-.full_img img {
+.div_oculto img {
   width: 70%;
   max-width: 480px;
 }
-.full_img span {
+.div_oculto span {
   position: absolute;
   top: 5%;
   right: 5%;
@@ -232,7 +234,7 @@ main {
   color: #ffffff;
   cursor: pointer;
 }
-.ocultar {
+.mostrar {
   display: none;
 }
 /* =================== PEDIDOS =================*/
