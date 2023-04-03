@@ -156,6 +156,7 @@ main {
 }
 
 .galery_item {
+  position: relative;
   height: 250px;
   width: 300px;
   background-color: #c2daba;
@@ -174,7 +175,65 @@ main {
   background-color: darkslategrey;
   color: #ffffff;
 }
+.oculto {
+  display: grid;
+  place-items: center;
+  background: linear-gradient(rgba(16, 16, 16, 0.4), rgba(16, 16, 16, 0.4));
+  width: 100%;
+  height: 0;
+  position: absolute;
+  z-index: 100;
+}
 
+.oculto_btn {
+  visibility: hidden;
+  background-color: #47a386;
+  border-radius: 6px;
+  border: none;
+  box-shadow: 0 2px 4px #0e0e0e;
+  color: #ffffff;
+  font-size: 1em;
+  padding: 10px 25px;
+  cursor: pointer;
+}
+
+.galery:hover {
+  box-shadow: 0 2px 8px #0e0e0e;
+}
+
+.galery:hover .oculto {
+  height: 100%;
+  transition: all 300ms;
+}
+.galery:hover .oculto_btn {
+  visibility: visible;
+}
+
+.full_img {
+  width: 100%;
+  background-color: rgb(0, 0, 0, 0.1);
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.full_img img {
+  width: 70%;
+  max-width: 480px;
+}
+.full_img span {
+  position: absolute;
+  top: 5%;
+  right: 5%;
+  font-size: 30px;
+  color: #ffffff;
+  cursor: pointer;
+}
+.ocultar {
+  display: none;
+}
 /* =================== PEDIDOS =================*/
 #formulario {
   width: 100%;
@@ -285,12 +344,9 @@ label {
   flex-direction: row-reverse;
 }
 .parrafo_laura {
-  /*  padding: 80px 0px 80px 80px; */
   text-align: right;
 }
-/* .parrafo_lordes {
-  padding: 80px 80px 80px 0px;
-} */
+
 .hermanas {
   width: 70%;
   margin-bottom: 50px;
