@@ -22,6 +22,7 @@ nav {
   align-items: center;
   background-color: #c2daba;
 }
+
 .logo_inicio {
   width: 70px;
   height: 70px;
@@ -31,25 +32,29 @@ nav {
   justify-content: center;
   align-items: center;
 }
-ul {
+#ul_nav {
   display: flex;
   margin: 0;
   padding: 0;
+  /* border: 2px solid red; */
 }
 li {
   list-style: none;
+  /* border: 2px solid red; */
 }
 li a {
   text-decoration: none;
   color: black;
   padding: 27px;
+  /* border: 2px solid red; */
 }
 li a:hover {
   color: #ffffff;
   background-color: #4ebb9c;
+  box-shadow: 0 2px 4px #0e0e0e;
 }
 .logo_inicio:hover {
-  background-color: #4ebb9c;
+  box-shadow: 0 2px 4px #0e0e0e;
 }
 #logo_introducción {
   background-color: #4ebb9c;
@@ -59,6 +64,26 @@ li a:hover {
   display: flex;
   justify-content: center;
   color: #ffffff;
+}
+
+.redes_sociales {
+  /* border: 2px solid red; */
+  height: 250px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  position: absolute;
+  left: 0;
+  top: 70px;
+}
+.logo_redes {
+  width: 50px;
+  padding: 10px;
+  cursor: pointer;
+}
+
+.logo_redes:hover {
+  scale: 120%;
 }
 /* ========================== INICIO ===========================================================*/
 main {
@@ -144,7 +169,7 @@ main {
 }
 
 /* =================================== PRODUCTOS ======================================== */
-.productos {
+.galery {
   margin-top: 30px;
   margin-bottom: 30px;
   display: grid;
@@ -156,25 +181,29 @@ main {
   grid-column-gap: 30px;
 }
 
-.galery_item {
-  position: relative;
-  height: 250px;
-  width: 300px;
-  background-color: #c2daba;
-}
-.imagen_producto {
-  width: 100%;
-  height: 250px;
-  object-fit: cover;
-}
-.precio_producto,
-.nombre_producto {
+.producto h1,
+.producto p {
   display: flex;
   justify-content: center;
   align-items: center;
   height: 50px;
   background-color: darkslategrey;
   color: #ffffff;
+  font-size: medium;
+  margin: 0;
+}
+.card_producto {
+  height: 250px;
+  width: 300px;
+  position: relative;
+  background-color: #c2daba;
+}
+
+.producto img {
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+  cursor: pointer;
 }
 .oculto {
   display: grid;
@@ -198,44 +227,70 @@ main {
   cursor: pointer;
 }
 
-.galery:hover {
+.producto:hover {
   box-shadow: 0 2px 8px #0e0e0e;
 }
 
-.galery:hover .oculto {
+.producto:hover .oculto {
   height: 100%;
   transition: all 300ms;
 }
-.galery:hover .oculto_btn {
+.producto:hover .oculto_btn {
+  visibility: visible;
+}
+.emergente__conteiner {
+  display: flex;
+  background-color: rgba(16, 16, 16, 0.8);
+  align-items: center;
+  justify-content: center;
+  position: fixed;
+  visibility: hidden;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 100vw;
+  z-index: 500;
+}
+
+.display_none {
+  display: none;
+}
+
+.mostrarCarrusel {
+  display: block;
+}
+
+.mostrar {
   visibility: visible;
 }
 
-.div_oculto {
-  width: 100%;
-  height: 100%;
-  background-color: rgb(0, 0, 0, 0.8);
-  position: fixed;
-  top: 0;
-  left: 0;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  z-index: 300;
-}
-.div_oculto img {
+.ventana__emergente {
   width: 70%;
-  max-width: 480px;
+  max-width: 50%;
+  text-align: center;
 }
-.div_oculto span {
+
+.carousel {
+  display: flex;
+  justify-content: center;
+}
+
+.btn_cerrar {
   position: absolute;
   top: 5%;
   right: 5%;
-  font-size: 30px;
+  background-color: #47a386;
+  border-radius: 6px;
+  border: none;
+  box-shadow: 0 2px 4px #0e0e0e;
   color: #ffffff;
+  font-size: 1em;
+  padding: 10px 25px;
   cursor: pointer;
 }
-.mostrar {
-  display: none;
+
+.imagen_activa {
+  width: 70%;
 }
 /* =================== PEDIDOS =================*/
 #formulario {
@@ -363,4 +418,9 @@ footer {
   background-color: #c2daba;
   justify-content: center;
   align-items: center;
+}
+
+footer p {
+  padding: 0;
+  margin: 0;
 }

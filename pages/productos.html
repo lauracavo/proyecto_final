@@ -23,9 +23,15 @@
     <!-- link a css -->
     <link rel="stylesheet" href="../css/style.css" />
 
-    <!-- link a js -->
-    <script src="../js/script.js"></script>
+    <!-- link a bootstrap -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ"
+      crossorigin="anonymous"
+    />
   </head>
+
   <body>
     <header>
       <nav>
@@ -38,7 +44,7 @@
           /></a>
         </div>
         <div>
-          <ul>
+          <ul id="ul_nav">
             <li><a href="./productos.html">PRODUCTOS</a></li>
             <li><a href="./sobre_nosotros.html">SOBRE NOSOTROS</a></li>
             <li><a href="./pedidos.html">PEDIDOS</a></li>
@@ -53,227 +59,234 @@
         </div>
         <div class="descripción">AGENDAS/PAPELERÍA</div>
       </section>
-      <section class="productos">
-        <div class="galery">
-          <div class="galery_item">
-            <div class="div_oculto mostrar" id="div_oculto">
-              <img src="../img/logo_blanco.png" alt="Foto del producto" />
-              <span>X</span>
-            </div>
+      <div class="redes_sociales">
+        <a
+          href="https://instagram.com/linz.design?igshid=YmMyMTA2M2Y="
+          target="_blank"
+        >
+          <img src="../img/instagram.png" alt="Instagram" class="logo_redes" />
+        </a>
+        <a
+          href="https://www.facebook.com/Linz.Design21?mibextid=ZbWKwL"
+          target="_blank"
+        >
+          <img src="../img/facebook.png" alt="Facebook" class="logo_redes" />
+        </a>
+        <a href="https://wa.me/5493364239345" target="_blank">
+          <img src="../img/whatsapp.png" alt="Whatsapp" class="logo_redes" />
+        </a>
+      </div>
+
+      <div class="galery">
+        <div class="producto">
+          <div class="card_producto">
             <div class="oculto">
-              <button class="oculto_btn" id="oculto_btn">ver producto</button>
+              <button id="producto1" class="oculto_btn">Ver Producto</button>
             </div>
-            <img
-              src="../img/producto_agenda_dias.jpeg"
-              alt="AGENDA ANUAL DÍAS"
-              class="imagen_producto"
-            />
+            <img src="../img/producto_agenda_dias.jpeg" alt="" />
           </div>
-          <div class="nombre_producto">AGENDA ANUAL DIARIA</div>
-          <div class="precio_producto">$4000</div>
+          <h1>AGENDA ANUAL DIARIA</h1>
+          <p>$4000</p>
         </div>
-        <div class="galery">
-          <div class="galery_item">
-            <div class="div_oculto mostrar" id="div_oculto">
-              <img src="../img/logo_blanco.png" alt="Foto del producto" />
-              <span>X</span>
-            </div>
+
+        <div class="producto">
+          <div class="card_producto">
             <div class="oculto">
-              <button class="oculto_btn" id="oculto_btn">ver producto</button>
+              <button id="producto2" class="oculto_btn">Ver Producto</button>
             </div>
-            <img
-              src="../img/producto_cuadernillo.jpeg"
-              alt="CUADERNILLO"
-              class="imagen_producto"
-            />
+            <img src="../img/producto_cuadernillo.jpeg" alt="" />
           </div>
-          <div class="nombre_producto">CUADERNILLO A4</div>
-          <div class="precio_producto">$1200</div>
+          <h1>CUADERNILLO A4</h1>
+          <p>$1200</p>
         </div>
-        <div class="galery">
-          <div class="galery_item">
-            <div class="div_oculto mostrar" id="div_oculto">
-              <img src="../img/logo_blanco.png" alt="Foto del producto" />
-              <span>X</span>
-            </div>
+
+        <div class="producto">
+          <div class="card_producto">
             <div class="oculto">
-              <button class="oculto_btn" id="oculto_btn">ver producto</button>
+              <button id="producto3" class="oculto_btn">Ver Producto</button>
             </div>
-            <img
-              src="../img/producto_cuaderno_inteligente.jpeg"
-              alt="CUADERNO INTELIGENTE"
-              class="imagen_producto"
-            />
+            <img src="../img/producto_cuaderno_inteligente.jpeg" alt="" />
           </div>
-          <div class="nombre_producto">CUADERNO INTELIGENTE A5</div>
-          <div class="precio_producto">$3500</div>
+          <h1>CUADERNO INTELIGENTE A5</h1>
+          <p>$35020</p>
         </div>
-        <div class="galery">
-          <div class="galery_item">
-            <div class="div_oculto mostrar" id="div_oculto">
-              <img src="../img/logo_blanco.png" alt="Foto del producto" />
-              <span>X</span>
-            </div>
+
+        <div class="producto">
+          <div class="card_producto">
             <div class="oculto">
-              <button class="oculto_btn" id="oculto_btn">ver producto</button>
+              <button id="producto4" class="oculto_btn">Ver Producto</button>
             </div>
-            <img
-              src="../img/producto_emprendedora.jpeg"
-              alt="AGENDA EMPRENDEDORA"
-              class="imagen_producto"
-            />
+            <img src="../img/agendas.jpeg" alt="" />
           </div>
-          <div class="nombre_producto">AGENDA EMPRENDEDORA A5</div>
-          <div class="precio_producto">$3000</div>
+          <h1>AGENDA EMPRENDEDORA A5</h1>
+          <p>$3000</p>
         </div>
-        <div class="galery">
-          <div class="galery_item">
-            <div class="div_oculto mostrar" id="div_oculto">
-              <img src="../img/logo_blanco.png" alt="Foto del producto" />
-              <span>X</span>
-            </div>
+
+        <div class="producto">
+          <div class="card_producto">
             <div class="oculto">
-              <button class="oculto_btn" id="oculto_btn">ver producto</button>
+              <button id="producto5" class="oculto_btn">Ver Producto</button>
             </div>
-            <img
-              src="../img/producto_separadores.jpeg"
-              alt="SEPARADORES"
-              class="imagen_producto"
-            />
+            <img src="../img/logo_negro.png" alt="" />
           </div>
-          <div class="nombre_producto">SEPARADORES (UNIDAD)</div>
-          <div class="precio_producto">$120</div>
+          <h1>SEPARADORES</h1>
+          <p>$120 C/U</p>
         </div>
-        <div class="galery">
-          <div class="galery_item">
-            <div class="div_oculto mostrar" id="div_oculto">
-              <img src="../img/logo_blanco.png" alt="Foto del producto" />
-              <span>X</span>
-            </div>
+
+        <div class="producto">
+          <div class="card_producto">
             <div class="oculto">
-              <button class="oculto_btn" id="oculto_btn">ver producto</button>
+              <button id="producto6" class="oculto_btn">Ver Producto</button>
             </div>
-            <img
-              src="../img/producto_stickers.jpeg"
-              alt="STICKERS"
-              class="imagen_producto"
-            />
+            <img src="../img/logo_negro.png" alt="" />
           </div>
-          <div class="nombre_producto">STICKERS</div>
-          <div class="precio_producto">$700</div>
+          <h1>STICKERS</h1>
+          <p>$700</p>
         </div>
-        <div class="galery">
-          <div class="galery_item">
-            <div class="div_oculto mostrar" id="div_oculto">
-              <img src="../img/logo_blanco.png" alt="Foto del producto" />
-              <span>X</span>
-            </div>
+
+        <div class="producto">
+          <div class="card_producto">
             <div class="oculto">
-              <button class="oculto_btn" id="oculto_btn">ver producto</button>
+              <button id="producto7" class="oculto_btn">Ver Producto</button>
             </div>
-            <img
-              src="../img/producto_agenda_dias.jpeg"
-              alt="AGENDA ANUAL DÍAS"
-              class="imagen_producto"
-            />
+            <img src="../img/logo_negro.png" alt="" />
           </div>
-          <div class="nombre_producto">AGENDA ANUAL DIARIA</div>
-          <div class="precio_producto">$4000</div>
+          <h1>AGENDA ANUAL DIARIA</h1>
+          <p>$4000</p>
         </div>
-        <div class="galery">
-          <div class="galery_item">
-            <div class="div_oculto mostrar" id="div_oculto">
-              <img src="../img/logo_blanco.png" alt="Foto del producto" />
-              <span>X</span>
-            </div>
+
+        <div class="producto">
+          <div class="card_producto">
             <div class="oculto">
-              <button class="oculto_btn" id="oculto_btn">ver producto</button>
+              <button id="producto8" class="oculto_btn">Ver Producto</button>
             </div>
-            <img
-              src="../img/producto_cuadernillo.jpeg"
-              alt="CUADERNILLO"
-              class="imagen_producto"
-            />
+            <img src="../img/logo_negro.png" alt="" />
           </div>
-          <div class="nombre_producto">CUADERNILLO A4</div>
-          <div class="precio_producto">$1200</div>
+          <h1>CUADERNILLO A4</h1>
+          <p>$1200</p>
         </div>
-        <div class="galery">
-          <div class="galery_item">
-            <div class="div_oculto mostrar" id="div_oculto">
-              <img src="../img/logo_blanco.png" alt="Foto del producto" />
-              <span>X</span>
-            </div>
+
+        <div class="producto">
+          <div class="card_producto">
             <div class="oculto">
-              <button class="oculto_btn" id="oculto_btn">ver producto</button>
+              <button id="producto9" class="oculto_btn">Ver Producto</button>
             </div>
-            <img
-              src="../img/producto_cuaderno_inteligente.jpeg"
-              alt="CUADERNO INTELIGENTE"
-              class="imagen_producto"
-            />
+            <img src="../img/logo_negro.png" alt="" />
           </div>
-          <div class="nombre_producto">CUADERNO INTELIGENTE A5</div>
-          <div class="precio_producto">$3500</div>
+          <h1>NOMBRE DEL PRODUCTO</h1>
+          <p>$$$$$$$</p>
         </div>
-        <div class="galery">
-          <div class="galery_item">
-            <div class="div_oculto mostrar" id="div_oculto">
-              <img src="../img/logo_blanco.png" alt="Foto del producto" />
-              <span>X</span>
-            </div>
+
+        <div class="producto">
+          <div class="card_producto">
             <div class="oculto">
-              <button class="oculto_btn" id="oculto_btn">ver producto</button>
+              <button id="producto10" class="oculto_btn">Ver Producto</button>
             </div>
-            <img
-              src="../img/producto_emprendedora.jpeg"
-              alt="AGENDA EMPRENDEDORA"
-              class="imagen_producto"
-            />
+            <img src="../img/logo_negro.png" alt="" />
           </div>
-          <div class="nombre_producto">AGENDA EMPRENDEDORA A5</div>
-          <div class="precio_producto">$3000</div>
+          <h1>NOMBRE DEL PRODUCTO</h1>
+          <p>$$$$$$$</p>
         </div>
-        <div class="galery">
-          <div class="galery_item">
-            <div class="div_oculto mostrar" id="div_oculto">
-              <img src="../img/logo_blanco.png" alt="Foto del producto" />
-              <span>X</span>
-            </div>
+
+        <div class="producto">
+          <div class="card_producto">
             <div class="oculto">
-              <button class="oculto_btn" id="oculto_btn">ver producto</button>
+              <button id="producto11" class="oculto_btn">Ver Producto</button>
             </div>
-            <img
-              src="../img/producto_separadores.jpeg"
-              alt="SEPARADORES"
-              class="imagen_producto"
-            />
+            <img src="../img/logo_negro.png" alt="" />
           </div>
-          <div class="nombre_producto">SEPARADORES (UNIDAD)</div>
-          <div class="precio_producto">$120</div>
+          <h1>NOMBRE DEL PRODUCTO</h1>
+          <p>$$$$$$$</p>
         </div>
-        <div class="galery">
-          <div class="galery_item">
-            <div class="div_oculto mostrar" id="div_oculto">
-              <img src="../img/logo_blanco.png" alt="Foto del producto" />
-              <span>X</span>
-            </div>
+
+        <div class="producto">
+          <div class="card_producto">
             <div class="oculto">
-              <button class="oculto_btn" id="oculto_btn">ver producto</button>
+              <button id="producto12" class="oculto_btn">Ver Producto</button>
             </div>
-            <img
-              src="../img/producto_stickers.jpeg"
-              alt="STICKERS"
-              class="imagen_producto"
-            />
+            <img src="../img/logo_negro.png" alt="" />
           </div>
-          <div class="nombre_producto">STICKERS</div>
-          <div class="precio_producto">$700</div>
+          <h1>NOMBRE DEL PRODUCTO</h1>
+          <p>$$$$$$$</p>
         </div>
-      </section>
+      </div>
+
+      <div class="emergente__conteiner" id="emergente_conteiner">
+        <div class="ventana__emergente">
+          <div id="carouselExample" class="carousel slide">
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="../img/slide_1.png" class="imagen_activa" alt="..." />
+              </div>
+              <div class="carousel-item">
+                <img src="../img/slide_2.png" class="imagen_activa" alt="..." />
+              </div>
+              <div class="carousel-item">
+                <img src="../img/slide_3.png" class="imagen_activa" alt="..." />
+              </div>
+            </div>
+            <button
+              class="carousel-control-prev"
+              type="button"
+              data-bs-target="#carouselExample"
+              data-bs-slide="prev"
+            >
+              <span
+                class="carousel-control-prev-icon"
+                aria-hidden="true"
+              ></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button
+              class="carousel-control-next"
+              type="button"
+              data-bs-target="#carouselExample"
+              data-bs-slide="next"
+            >
+              <span
+                class="carousel-control-next-icon"
+                aria-hidden="true"
+              ></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+
+          <!--<div class="carrusel_1 display_none" id="carrusel_1"></div>
+
+          <div class="carrusel_2 display_none" id="carrusel_2"></div>
+
+          <div class="carrusel_3 display_none" id="carrusel_3"></div>
+
+          <div class="carrusel_4 display_none" id="carrusel_4"></div>
+
+          <div class="carrusel_5 display_none" id="carrusel_5"></div>
+
+          <div class="carrusel_6 display_none" id="carrusel_6"></div>
+
+          <div class="carrusel_7 display_none" id="carrusel_7"></div>
+
+          <div class="carrusel_8 display_none" id="carrusel_8"></div>
+
+          <div class="carrusel_9 display_none" id="carrusel_9"></div>
+
+          <div class="carrusel_10 display_none" id="carrusel_10"></div>
+
+          <div class="carrusel_11 display_none" id="carrusel_11"></div>
+
+          <div class="carrusel_12 display_none" id="carrusel_12"></div> -->
+          <button id="cerrar" class="btn_cerrar">X</button>
+        </div>
+      </div>
     </main>
     <footer id="footer">
       <p class="footer_page">&copy; 2023 , Linz Design</p>
     </footer>
+    <!-- link a js -->
+    <script src="../js/script.js"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
+      crossorigin="anonymous"
+    ></script>
   </body>
 </html>
